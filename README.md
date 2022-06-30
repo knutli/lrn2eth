@@ -19,16 +19,27 @@ Arrays, structs and mappings are special data types, and solidity needs to be to
 - Storage is permanent MODIFIABLE variables (on the blockchain)
 
 **Syntax structure**
-- data type
-- name
-- visibility (public, private, external, internal)
+- Data type
+- Name
+- Visibility (public, private, external, internal)
+- Payability (if yes, add payable flag)
+
+For example: 
+function fundMe() public payable {whatever the function is supposed to do}
 
 **Composability**
 - A smart contract can be imported into another smart contract and given a name
 - When interacting with a contract outside our own project we need its contract address and its ABI
+- Import another contract with "import @PATH". Stick it at the top of your contract
+- An "interface" is kinda like a recipe to get the content of the ABI. For example 
+import "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
+- Then do 
+AggregatorV3Interface linkVar = AggregatorV3Interface(0x8A753747A1Fa494EC906cE90E9f37563A8AF630e);
+and you can now use the contract's functions!
+- return linkVar.version(); //version() is a function from the external contract! Cool!
 
 **Global function things**
-- msg.value
+- msg.value (
 - msg.sender
 
 **Chainlink out of the box stuff**
