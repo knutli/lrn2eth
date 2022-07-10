@@ -1,16 +1,16 @@
 # lrn2eth
-My learning journey, from zero experience with coding, to becoming a Solidity champ
+My learning journey, from zero experience with coding, to becoming a Solidity whiz kid
 
 **Data types**
 - variables
-- uint, int, 
+- uint, uint8, uint256, int +++ 
 - string
 - address
 - array[] (if you set an array, you can either define its size like array[3] or leave it like array[] for it to be infinitely long
 - struct{} (define a new data type, and in it, I define what it contains)
 - mapping(data type => data type)
 
-Arrays, structs and mappings are special data types, and solidity needs to be told where they are supposed to be saved. It already knows where uint will be saved, so you dont need to specify for those. A string is secretly/behind the scenes an array. 
+Arrays, structs and mappings are special data types, and solidity needs to be told where they are supposed to be saved -> memory, storage or calldata. It already knows where uint will be saved, so you dont need to specify for those. A string is secretly/behind the scenes an array. 
 
 **Storing data**
 - The EVM stores data in stack, memory, storage, calldata, code and logs
@@ -24,8 +24,12 @@ Arrays, structs and mappings are special data types, and solidity needs to be to
 - Visibility (public, private, external, internal)
 - Payability (if yes, add payable flag)
 
-For example: 
-function fundMe() public payable {whatever the function is supposed to do}
+**Libraries**
+- A library is like a contract, except it cannot send ether and it cannot declare state variables
+- Instead of doing "contract contractName {}", you do "library libraryName {}" and import it like you would any other contract
+- In the library you probably have functions, like function add()
+- Once the library is imported into a contract, you can write "using libraryName for uint"
+- by adding the keyword *using* we could give any uint within the contract the libraries functions and pass the uint as the first parameter of that function, e.g. x.add(123)
 
 **Composability**
 - A smart contract can be imported into another smart contract and given a name
@@ -39,11 +43,17 @@ and you can now use the contract's functions!
 - return linkVar.version(); //version() is a function from the external contract! Cool!
 
 **Global function things**
-- msg.value (
-- msg.sender
+- msg.value (how many wei was sent with the message)
+- msg.sender (address of the sender of the message)
 
 **Chainlink out of the box stuff**
 - Data feeds connect us to the real world
 - Randomness function gives us provable random numbers, which we can't get on ETH because determinism
 - Keepers are decentralized, event-driven computation. If trigger => do this. We can set both trigger and reaction 
 - API calls with oracle nodes
+
+
+**Exciting resources:** 
+Chainlink: https://docs.chain.link/docs/ethereum-addresses/
+Ethereum global variables: https://ethereum-solidity.readthedocs.io/en/latest/units-and-global-variables.html
+Libraries: https://solidity-by-example.org/library
