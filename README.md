@@ -31,6 +31,12 @@ Arrays, structs and mappings are special data types, and solidity needs to be to
 - Once the library is imported into a contract, you can write "using libraryName for uint"
 - by adding the keyword *using* we could give any uint within the contract the libraries functions and pass the uint as the first parameter of that function, e.g. x.add(123)
 
+**Special functions**
+- A **constructor** is a function that is automatically called when the contract is published. A classic usecase is to set the owner of the contract to msg.sender. 
+- A **modifier** is basically writing a piece of code and attach it to a keyword. This keyword is then placed along with other functions' stuff, like public view +++. See the fundMe example, and the onlyOwner modifier. 
+- A **receive()** method is used as a fallback function in a contract and is called when ether is sent to a contract with no calldata. If the receive method does not exist, it will use the fallback function. The receive function cannot have arguments, cannot return anything and must have external visibility and payable state mutability. 
+- A **fallback()** method is called if the receive function doesn't exist. fallback() external payable — when no other function matches (not even the receive function). Optionally payable.
+
 **Composability**
 - A smart contract can be imported into another smart contract and given a name
 - When interacting with a contract outside our own project we need its contract address and its ABI
@@ -52,6 +58,10 @@ and you can now use the contract's functions!
 - Keepers are decentralized, event-driven computation. If trigger => do this. We can set both trigger and reaction 
 - API calls with oracle nodes
 
+**Gas optimization stuff**
+- *constant* and *immutable* are great to use if you're only setting your variables once. They are keywords that write variables directly into the bytecode of the contract instead of into its storage, making it easier to read, and therefore more gas efficient. Naming convention for constants is ALL_CAPS, while immutable is i_variable. 
+- *custom errors* are a new thing used in place of require. 
+ 
 
 **Exciting resources:** 
 Chainlink: https://docs.chain.link/docs/ethereum-addresses/
