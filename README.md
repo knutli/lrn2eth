@@ -9,7 +9,7 @@
 5. [Special functions and global functions](https://github.com/knutli/lrn2eth/blob/main/README.md#special-functions)
 6. [Composability and Chainlink stuff](https://github.com/knutli/lrn2eth/blob/main/README.md#composability)
 7. [Gas optimization](https://github.com/knutli/lrn2eth/blob/main/README.md#gas-optimization-stuff)
-8. [Debugging](
+8. [Debugging](https://github.com/knutli/lrn2eth/blob/main/README.md#debugging-errors)
 9. [Exciting resources](https://github.com/knutli/lrn2eth/blob/main/README.md#exciting-resources)
 
 
