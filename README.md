@@ -12,11 +12,9 @@
 8. [Exciting resources](https://github.com/knutli/lrn2eth/blob/main/README.md#exciting-resources)
 
 
-## Data types
-- variables
-- uint, uint8, uint256, int +++ 
-- string
-- address
+## Basic data types
+- Types and variables
+   - uint, uint8, uint256, int, int8, int256, bool, string, address
 - array[] (if you set an array, you can either define its size like array[3] or leave it like array[] for it to be infinitely long
 - struct{} (define a new data type, and in it, I define what it contains)
 - mapping(data type => data type)
