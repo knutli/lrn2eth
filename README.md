@@ -76,7 +76,9 @@ and you can now use the contract's functions!
 
 
 ## Gas optimization stuff
-- *constant* and *immutable* are great to use if you're only setting your variables once. They are keywords that write variables directly into the bytecode of the contract instead of into its storage, making it easier to read, and therefore more gas efficient. Naming convention for constants is ALL_CAPS, while immutable is i_variable. 
+- *constant* and *immutable* are great keywords to use if you're only setting your variables once. They are keywords that write variables directly into the bytecode of the contract instead of into its storage, making it easier to read, and therefore more gas efficient. Naming convention for constants is ALL_CAPS, while immutable is i_variable. 
+- Constants can be set once, and only once. 
+- Immutable can be set once and again in the constructor. 
 - *custom errors* are a new thing used in place of require. 
  
 
