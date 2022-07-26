@@ -9,7 +9,9 @@
 5. [Special functions and global functions](https://github.com/knutli/lrn2eth/blob/main/README.md#special-functions)
 6. [Composability and Chainlink stuff](https://github.com/knutli/lrn2eth/blob/main/README.md#composability)
 7. [Gas optimization](https://github.com/knutli/lrn2eth/blob/main/README.md#gas-optimization-stuff)
-8. [Exciting resources](https://github.com/knutli/lrn2eth/blob/main/README.md#exciting-resources)
+8. [Debugging](
+9. [Exciting resources](https://github.com/knutli/lrn2eth/blob/main/README.md#exciting-resources)
+
 
 
 ## Basic data types
@@ -78,6 +80,14 @@ and you can now use the contract's functions!
 - Constants can be set once, and only once. 
 - Immutable can be set once and again in the constructor. 
 - *custom errors* are a new thing used in place of require. 
+
+
+## Debugging errors
+1. Tinker and experiment with the error. No more than 20 min before proceeding to next step. 
+2. Check the documentation
+3. Google the exact error
+4. Ask questions on forums and community Q&A sites, e.g. stack overflow, ethereum stack exchange, /r/ethdev, or on discords. 
+5. Contribute by posting your solution! Join the community and strengthen the available resources. 
  
 
 ## Exciting resources
