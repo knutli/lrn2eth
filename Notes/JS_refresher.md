@@ -41,7 +41,7 @@ function setupMoveNight() {
 ```javascript
 async function setupMoveNight() {
   await cookPopcorn();
-  pourDrinks();
+  await pourDrinks();
   startMovie();
 }
 
@@ -50,3 +50,7 @@ function cookPopcorn() {
   return Promise(/*some more code here*/);
 }
 ```
+
+- By using async functions we get access to the **await** keyword.
+- When using await we're telling any promise-based function to wait for that promise to be fulfilled (i.e. the promise in my cookPopcorn function), or rejected.
+- So in the async function above, we're saying, first run cookPopcorn(), then run pourDrinks() and only if those two are Fulfilled, run startMovie().
