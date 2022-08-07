@@ -97,5 +97,3 @@ Arrays, structs and mappings are special data types, and solidity needs to be to
 Chainlink: https://docs.chain.link/docs/ethereum-addresses/
 Ethereum global variables: https://ethereum-solidity.readthedocs.io/en/latest/units-and-global-variables.html
 Libraries: https://solidity-by-example.org/library
-
-yo does this shit work now?
