@@ -28,25 +28,25 @@
 
 **This would be synchronous:**
 
-```
+```javascript
 function setupMoveNight() {
-    cookPopcorn() // first do this
-    pourDrinks() // then do this
-    startMovie() // and finally do this
+  cookPopcorn(); // first do this
+  pourDrinks(); // then do this
+  startMovie(); // and finally do this
 }
 ```
 
 **While this would be asynchronous:**
 
-```
+```javascript
 async function setupMoveNight() {
-    await cookPopcorn()
-    pourDrinks()
-    startMovie()
+  await cookPopcorn();
+  pourDrinks();
+  startMovie();
 }
 
-function cookPopcorn (){
-    // some code
-    return Promise(/*some more code here*/)
+function cookPopcorn() {
+  // some code
+  return Promise(/*some more code here*/);
 }
 ```
