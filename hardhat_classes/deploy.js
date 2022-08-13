@@ -1,3 +1,5 @@
+const currentTimeInCourse = "7:24:58";
+
 const ethers = require("ethers"); //import ethersjs package
 const fs = require("fs");
 
@@ -24,6 +26,7 @@ async function main() {
   console.log("Deploying, please wait...");
   const contract = await contractFactory.deploy(); //stop here and wait for contract to deploy
   const txReceipt = await contract.deployTransaction.wait(1);
+  console.log(txReceipt);
 
   // console.log("Let's deploy contract with only tx data!");
   // const nonce = await wallet.getTransactionCount();
@@ -37,9 +40,9 @@ async function main() {
   //   chainId: 1337,
   // };
 
-  const sentTxResponse = await wallet.sendTransaction(tx);
-  await sentTxResponse.wait(1);
-  console.log(sentTxResponse);
+  // const sentTxResponse = await wallet.sendTransaction(tx);
+  // await sentTxResponse.wait(1);
+  // console.log(sentTxResponse);
 
   /* 
   console.log("Here is the deployment tx (tx response): ");
