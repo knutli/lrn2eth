@@ -2,7 +2,8 @@ const currentTimeInCourse = "7:24:58";
 
 const ethers = require("ethers"); //import ethersjs package
 const fs = require("fs");
-require("dotenv").config();
+const path = require("path");
+require("dotenv").config({ path: path.resolve(__dirname, "../.env") });
 
 async function main() {
   // compile them in our code
