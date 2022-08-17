@@ -2,18 +2,14 @@ const currentTimeInCourse = "7:24:58";
 
 const ethers = require("ethers"); //import ethersjs package
 const fs = require("fs");
+require("dotenv").config();
 
 async function main() {
   // compile them in our code
   // compile separately
   // http://127.0.0.1:7545 = ganache rpc
-  const provider = new ethers.providers.JsonRpcProvider(
-    "http://127.0.0.1:7545"
-  );
-  const wallet = new ethers.Wallet(
-    "7cc02ad0413996bfb267b6119cd3e0b0d62b45d8e4dd07a581f4403bd5b1b32e", //huge no-no to paste private key like this!
-    provider
-  );
+  const provider = new ethers.providers.JsonRpcProvider(process.env.RPC_URL); //using environment variables by using dotenv and placing vars in .env
+  const wallet = new ethers.Wallet(process.env.PRIVATE_KEY, provider);
   const abi = fs.readFileSync(
     "./simpleStorage_hh_sol_SimpleStorage.abi",
     "utf8"
@@ -24,9 +20,18 @@ async function main() {
   );
   const contractFactory = new ethers.ContractFactory(abi, binary, wallet);
   console.log("Deploying, please wait...");
+  console.log(`Using this RPC: ${process.env.RPC_URL}`);
+  console.log(`Your private key: ${process.env.PRIVATE_KEY}`);
   const contract = await contractFactory.deploy(); //stop here and wait for contract to deploy
-  const txReceipt = await contract.deployTransaction.wait(1);
-  console.log(txReceipt);
+  await contract.deployTransaction.wait(1);
+
+  // Get number
+  const getFavoriteNumber = await contract.retrieve();
+  console.log(`Current favorite number: ${getFavoriteNumber.toString()}`);
+  const txResponse = await contract.store("8");
+  const txReceipt = await txResponse.wait(1);
+  const updatedFavNumber = await contract.retrieve();
+  console.log(`New favorite number is... ${updatedFavNumber}`);
 
   // console.log("Let's deploy contract with only tx data!");
   // const nonce = await wallet.getTransactionCount();
