@@ -2,6 +2,8 @@
 
 **My learning journey, from zero experience with coding, to becoming a Solidity whiz kid**
 
+**Current timestamp in Patrick's course: 09:47:05**
+
 # Table of content:
 
 1. [Data types](https://github.com/knutli/lrn2eth/blob/main/README.md#data-types)
@@ -62,6 +64,13 @@ Arrays, structs and mappings are special data types, and solidity needs to be to
 
 - They basically do the same thing. Interact with contract, deploy smart contracts.
 - Tasks are better for plugins. Scripts are better for your own local development.
+
+## Hardhat
+
+- A dev environment that basically helps you with all things smart contract.
+- It provides both a local Ethereum network through its Hardhat network, as well as the ability to spin up a localhost network (by running yarn hardhat node).
+- Extensible, composable, flexible tooling platform
+- In short, it's a tool that automates a ton of shit for you
 
 ## Composability
 
