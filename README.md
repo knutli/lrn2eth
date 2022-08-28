@@ -58,6 +58,11 @@ Arrays, structs and mappings are special data types, and solidity needs to be to
 - msg.value (how many wei was sent with the message)
 - msg.sender (address of the sender of the message)
 
+## Scripts and tasks
+
+- They basically do the same thing. Interact with contract, deploy smart contracts.
+- Tasks are better for plugins. Scripts are better for your own local development.
+
 ## Composability
 
 - A smart contract can be imported into another smart contract and given a name
