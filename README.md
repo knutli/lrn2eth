@@ -2,7 +2,7 @@
 
 **My learning journey, from zero experience with coding, to becoming a Solidity whiz kid**
 
-**Current timestamp in Patrick's course: 09:47:05**
+**Current timestamp in [Patrick's](https://www.youtube.com/watch?v=gyMwXuJrbJQ&t=22291s) course: 09:47:05**
 
 # Table of content:
 
