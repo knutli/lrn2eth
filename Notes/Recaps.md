@@ -20,7 +20,7 @@
 
 - Spin up my own hardhat project with `yarn hardhat`
 - Compile with `yarn hardhat compile`
-- Deploy with ```yarn hardhat deploy --network [insert network]´´´
+- Deploy with `yarn hardhat deploy --network [insert network]`
 - All compilation goes into artifacts and cache. To clean we can delete these folders, or we can run `yarn hardhat clean`
 - We can run scripts and tasks to deploy or interact with our smart contracts. Tasks are for plugins. Scripts are for local dev environment
 - Import a whole lot of things, inc tasks, from hardhat
