@@ -13,10 +13,10 @@ TBD!!!
 ## Basic data types
 
 - Types and variables
-  - uint, uint8, uint256, int, int8, int256, bool, string, address
-- array[] (if you set an array, you can either define its size like array[3] or leave it like array[] for it to be infinitely long
-- struct{} (define a new data type, and in it, I define what it contains)
-- mapping(data type => data type)
+  - `uint`, `uint8`, `uint256`, `int`, `int8`, `int256`, `bool`, `string`, `address`
+- `array[]` (if you set an array, you can either define its size like `array[3]` or leave it like `array[]` for it to be infinitely long
+- `struct{}` (define a new data type, and in it, I define what it contains)
+- `mapping(data type => data type)`
 
 Arrays, structs and mappings are special data types, and solidity needs to be told where they are supposed to be saved -> memory, storage or calldata. It already knows where uint will be saved, so you dont need to specify for those. A string is secretly/behind the scenes an array.
 
