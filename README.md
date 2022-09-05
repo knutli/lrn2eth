@@ -8,7 +8,7 @@
 
 TBD!!!
 
-<details><summary><h1>Introduction and basics</h1></summary>
+<details><summary><h1> 💡 Introduction and basics</h1></summary>
 
 ## Basic data types
 
@@ -92,13 +92,13 @@ Arrays, structs and mappings are special data types, and solidity needs to be to
 - _custom errors_ are a new thing used in place of require.
 </details>
 
-<details><summary><h1> ethers.js stuff </h1></summary>
+<details><summary><h1> 🏗 ethers.js stuff </h1></summary>
 
 - Coming. Didn't take notes for this part :(
 
 </details>
 
-<details> <summary><h1> Hardhat stuff </h1></summary>
+<details> <summary><h1> 🪖 Hardhat stuff </h1></summary>
 
 ## wtf is Hardhat?
 
@@ -169,7 +169,7 @@ This requires us to use `modules.export = {networkConfig}` in the helper hardhat
 
 </details>
 
-<details><summary><h1> Miscellaneous stuff </h1></summary>
+<details><summary><h1> 🥷 Miscellaneous stuff </h1></summary>
 
 ## Debugging errors
 
