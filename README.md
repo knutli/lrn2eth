@@ -16,7 +16,7 @@
 8. [Debugging](https://github.com/knutli/lrn2eth/blob/main/README.md#debugging-errors)
 9. [Exciting resources](https://github.com/knutli/lrn2eth/blob/main/README.md#exciting-resources)
 
-<details><h1>Introduction and basics</h1>
+<details><summary><h1>Introduction and basics</h1></summary>
 
 ## Basic data types
 
