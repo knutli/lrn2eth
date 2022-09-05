@@ -100,11 +100,13 @@ Arrays, structs and mappings are special data types, and solidity needs to be to
 - _custom errors_ are a new thing used in place of require.
 </details>
 
-# ethers.js stuff
+<details><summary><h1> ethers.js stuff </h1></summary>
 
 - Coming. Didn't take notes for this part :(
 
-# Hardhat stuff
+</details>
+
+<details><summary><h1> Hardhat stuff </h1><summary>
 
 ## Hardhat
 
@@ -151,7 +153,9 @@ const networkConfig = helperConfig.networkConfig;
 
 This requires us to use `modules.export = {networkConfig}` in the helper hardhat config file.
 
-# Miscellaneous stuff
+</details>
+
+<details><summary><h1> Miscellaneous stuff </h1></summary>
 
 ## Debugging errors
 
@@ -166,3 +170,5 @@ This requires us to use `modules.export = {networkConfig}` in the helper hardhat
 Chainlink: https://docs.chain.link/docs/ethereum-addresses/
 Ethereum global variables: https://ethereum-solidity.readthedocs.io/en/latest/units-and-global-variables.html
 Libraries: https://solidity-by-example.org/library
+
+</details>
