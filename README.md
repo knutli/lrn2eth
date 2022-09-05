@@ -103,7 +103,7 @@ Arrays, structs and mappings are special data types, and solidity needs to be to
 ## wtf is Hardhat?
 
 - A dev environment that basically helps you with all things smart contract.
-- It provides both a local Ethereum network through its Hardhat network, as well as the ability to spin up a localhost network (by running yarn hardhat node).
+- It provides both a local Ethereum network through its Hardhat network, as well as the ability to spin up a localhost network (by running `yarn hardhat node`).
 - Extensible, composable, flexible tooling platform
 - In short, it's a tool that automates a ton of shit for you
 
