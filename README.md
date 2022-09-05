@@ -112,31 +112,31 @@ Arrays, structs and mappings are special data types, and solidity needs to be to
 - See docs [here](https://hardhat.org/hardhat-runner/docs/guides/project-setup)
 - When spinning up a new project, do
 
-```javascript
-yarn add --dev hardhat
-```
+  ```javascript
+  yarn add --dev hardhat
+  ```
 
-and then run
+  and then run
 
-```javascript
-yarn hardhat
-```
+  ```javascript
+  yarn hardhat
+  ```
 
-to set up a template
+  to set up a template
 
 - Compile your project with
 
-```javascript
-yarn hardhat compile
-```
+  ```javascript
+  yarn hardhat compile
+  ```
 
 - Edit the hardhat.config.js file. This is where you can add networks (Optimism, Arbitrum, mainnet, Ganache, Goerli, Sepolia +++) you want to deploy to. By default, hardhat deploys to a local hardhat node that is destroyed between each use.
 - Hardhat doesn't currently have a deployer, so it's better if you point it to your deploy script
 - Deploy to your chosen network with
 
-```javascript
-yarn hardhat run ./scripts/deploy.js --network [insertNetwork]
-```
+  ```javascript
+  yarn hardhat run ./scripts/deploy.js --network [insertNetwork]
+  ```
 
 ## Scripts and tasks
 
