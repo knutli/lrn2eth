@@ -16,7 +16,7 @@
 8. [Debugging](https://github.com/knutli/lrn2eth/blob/main/README.md#debugging-errors)
 9. [Exciting resources](https://github.com/knutli/lrn2eth/blob/main/README.md#exciting-resources)
 
-# Introduction and basics
+<details><summary># Introduction and basics</summary>
 
 ## Basic data types
 
@@ -98,6 +98,7 @@ Arrays, structs and mappings are special data types, and solidity needs to be to
 - Constants can be set once, and only once.
 - Immutable can be set once and again in the constructor.
 - _custom errors_ are a new thing used in place of require.
+</details>
 
 # ethers.js stuff
 
