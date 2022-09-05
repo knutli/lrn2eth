@@ -2,7 +2,7 @@
 
 **My learning journey, from zero experience with coding, to becoming a Solidity whiz kid**
 
-**Current timestamp in [Patrick's](https://www.youtube.com/watch?v=gyMwXuJrbJQ&t=22291s) course: 09:47:05**
+**Current timestamp in [Patrick's](https://www.youtube.com/watch?v=gyMwXuJrbJQ&t=22291s) course: 10:49:05**
 
 # Table of content:
 
@@ -117,7 +117,27 @@ Arrays, structs and mappings are special data types, and solidity needs to be to
 
 ## Mocking
 
-- Mocking is used when you develop contracts locally or on testnets like hardhat, and your contracts is reliant on some other external (complex) contract. Your local/test contract may depend on a real object. Mocking is creating objects that simulate the behaviour of
+- Mocking is used when you develop contracts locally or on testnets like hardhat, and your contracts is reliant on some other external (complex) contract. Your local/test contract may depend on a real object. Mocking is creating objects that simulate the behaviour of real objects
+
+## Dynamic deployment networks
+
+- Can we use different addresses for our contracts **depending** on which network I deploy to? YES! Depending on the network you're on, we'll use different variables, kinda like a network config.
+- See helper.hardhard.config.js in hardhat_fundme
+
+## Random syntax stuff
+
+```javascript
+const {networkConfig} = require("../helper-hardhat-config")`
+```
+
+is the same as writing
+
+```javascript
+const helperConfig = require("../helper-hardhat-config");
+const networkConfig = helperConfig.networkConfig;
+```
+
+This requires us to use `modules.export = {networkConfig}` in the helper hardhat config file.
 
 # Miscellaneous stuff
 

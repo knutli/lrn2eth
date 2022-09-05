@@ -10,8 +10,11 @@ contract FundMe {
     address[] public funders;
     address public immutable owner;
 
-    constructor() {
+    AggregatorV3Interface public priceFeed;
+
+    constructor(address priceFeedAddress) {
         owner = msg.sender;
+        priceFeed = AggregatorV3Interface(priceFeedAddress);
     }
 
     function howManyFunders() public view returns (uint256) {
@@ -28,11 +31,11 @@ contract FundMe {
         //Want to be able to set a minimum funding amount in USD
         //1. How do we send ETH to this contract? we set it to payable
         require(
-            msg.value.getConversionRate() >= MINIMUM_USD,
+            msg.value.getConversionRate(priceFeed) >= MINIMUM_USD,
             "not enuf vespene gas"
         ); // 1e18 == 1 * 10 ** 18 == 1 000 000 000 000 000 000
         funders.push(msg.sender);
-        addressToAmountFunded[msg.sender] = msg.value;
+        addressToAmountFunded[msg.sender] += msg.value;
         //this require function is kind of like a checkpoint
         //it checks to see if condition is met and if yes carries it out. if its not met, it reverts, and sends back any gas used up until require
         //anything after the checkpoint will still try to run
