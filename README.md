@@ -4,17 +4,9 @@
 
 **Current timestamp in [Patrick's](https://www.youtube.com/watch?v=gyMwXuJrbJQ&t=22291s) course: 10:49:05**
 
-# Table of content:
+# Table of content :
 
-1. [Data types](https://github.com/knutli/lrn2eth/blob/main/README.md#data-types)
-2. [Storing data](https://github.com/knutli/lrn2eth/blob/main/README.md#storing-data)
-3. [Syntax structure](https://github.com/knutli/lrn2eth/blob/main/README.md#syntax-structure)
-4. [Libraries](https://github.com/knutli/lrn2eth/blob/main/README.md#libraries)
-5. [Special functions and global functions](https://github.com/knutli/lrn2eth/blob/main/README.md#special-functions)
-6. [Composability and Chainlink stuff](https://github.com/knutli/lrn2eth/blob/main/README.md#composability)
-7. [Gas optimization](https://github.com/knutli/lrn2eth/blob/main/README.md#gas-optimization-stuff)
-8. [Debugging](https://github.com/knutli/lrn2eth/blob/main/README.md#debugging-errors)
-9. [Exciting resources](https://github.com/knutli/lrn2eth/blob/main/README.md#exciting-resources)
+TBD!!!
 
 <details><summary><h1>Introduction and basics</h1></summary>
 
@@ -108,7 +100,7 @@ Arrays, structs and mappings are special data types, and solidity needs to be to
 
 <details> <summary><h1> Hardhat stuff </h1></summary>
 
-## Hardhat
+## wtf is Hardhat?
 
 - A dev environment that basically helps you with all things smart contract.
 - It provides both a local Ethereum network through its Hardhat network, as well as the ability to spin up a localhost network (by running yarn hardhat node).
