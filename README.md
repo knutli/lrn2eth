@@ -16,6 +16,8 @@
 8. [Debugging](https://github.com/knutli/lrn2eth/blob/main/README.md#debugging-errors)
 9. [Exciting resources](https://github.com/knutli/lrn2eth/blob/main/README.md#exciting-resources)
 
+# Introduction and basics
+
 ## Basic data types
 
 - Types and variables
@@ -60,18 +62,6 @@ Arrays, structs and mappings are special data types, and solidity needs to be to
 - msg.value (how many wei was sent with the message)
 - msg.sender (address of the sender of the message)
 
-## Scripts and tasks
-
-- They basically do the same thing. Interact with contract, deploy smart contracts.
-- Tasks are better for plugins. Scripts are better for your own local development.
-
-## Hardhat
-
-- A dev environment that basically helps you with all things smart contract.
-- It provides both a local Ethereum network through its Hardhat network, as well as the ability to spin up a localhost network (by running yarn hardhat node).
-- Extensible, composable, flexible tooling platform
-- In short, it's a tool that automates a ton of shit for you
-
 ## Composability
 
 - A smart contract can be imported into another smart contract and given a name
@@ -97,6 +87,39 @@ Arrays, structs and mappings are special data types, and solidity needs to be to
 - Constants can be set once, and only once.
 - Immutable can be set once and again in the constructor.
 - _custom errors_ are a new thing used in place of require.
+
+# ethers.js stuff
+
+- Coming. Didn't take notes for this part :(
+
+# Hardhat stuff
+
+## Hardhat
+
+- A dev environment that basically helps you with all things smart contract.
+- It provides both a local Ethereum network through its Hardhat network, as well as the ability to spin up a localhost network (by running yarn hardhat node).
+- Extensible, composable, flexible tooling platform
+- In short, it's a tool that automates a ton of shit for you
+
+## Hardhat basics
+
+- See docs [here](https://hardhat.org/hardhat-runner/docs/guides/project-setup)
+- When spinning up a new project, do `yarn add --dev hardhat` and then run `yarn hardhat` to set up a template
+- Compile your project with `yarn hardhat compile`
+- Edit the hardhat.config.js file. This is where you can add networks (Optimism, Arbitrum, mainnet, Ganache, Goerli, Sepolia +++) you want to deploy to. By default, hardhat deploys to a local hardhat node that is destroyed between each use.
+- Hardhat doesn't currently have a deployer, so it's better if you point it to your deploy script
+- Deploy to your chosen network with `yarn hardhat run ./scripts/deploy.js --network [insertNetwork]`
+
+## Scripts and tasks
+
+- They basically do the same thing. Interact with contract, deploy smart contracts.
+- Tasks are better for plugins. Scripts are better for your own local development.
+
+## Mocking
+
+- Mocking is used when you develop contracts locally or on testnets like hardhat, and your contracts is reliant on some other external (complex) contract. Your local/test contract may depend on a real object. Mocking is creating objects that simulate the behaviour of
+
+# Miscellaneous stuff
 
 ## Debugging errors
 
