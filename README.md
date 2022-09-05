@@ -106,7 +106,7 @@ Arrays, structs and mappings are special data types, and solidity needs to be to
 
 </details>
 
-<details><summary><h1> Hardhat stuff </h1><summary>
+<details> <summary><h1> Hardhat stuff </h1></summary>
 
 ## Hardhat
 
