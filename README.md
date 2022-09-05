@@ -112,13 +112,13 @@ Arrays, structs and mappings are special data types, and solidity needs to be to
 - See docs [here](https://hardhat.org/hardhat-runner/docs/guides/project-setup)
 - When spinning up a new project, do
 
-  ```javascript
+  ```solidity
   yarn add --dev hardhat
   ```
 
   and then run
 
-  ```javascript
+  ```solidity
   yarn hardhat
   ```
 
@@ -126,7 +126,7 @@ Arrays, structs and mappings are special data types, and solidity needs to be to
 
 - Compile your project with
 
-  ```javascript
+  ```solidity
   yarn hardhat compile
   ```
 
