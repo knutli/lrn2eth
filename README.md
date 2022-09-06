@@ -4,9 +4,34 @@
 
 **Current timestamp in [Patrick's](https://www.youtube.com/watch?v=gyMwXuJrbJQ&t=22291s) course: 10:49:05**
 
-# Table of content :
+<details><summary><h1> 📒 Table of content : </h1></summary>
 
-TBD!!!
+1. [Intro and basics](https://github.com/knutli/lrn2eth/blob/main/README.md#--introduction-and-basics)
+
+- [Data types](https://github.com/knutli/lrn2eth/blob/main/README.md#basic-data-types)
+- [Storing data](https://github.com/knutli/lrn2eth/blob/main/README.md#storing-data)
+- [Syntax structure](https://github.com/knutli/lrn2eth/blob/main/README.md#syntax-structure)
+- [Libraries](https://github.com/knutli/lrn2eth/blob/main/README.md#libraries)
+- [Special functions](https://github.com/knutli/lrn2eth/blob/main/README.md#special-functions)
+  - [Global function things](https://github.com/knutli/lrn2eth/blob/main/README.md#global-function-things)
+- [Composability](https://github.com/knutli/lrn2eth/blob/main/README.md#composability)
+- [What can you do with Chainlink?](https://github.com/knutli/lrn2eth/blob/main/README.md#chainlink-out-of-the-box-stuff)
+- [Gas optimization stuff](https://github.com/knutli/lrn2eth/blob/main/README.md#gas-optimization-stuff)
+
+2. [ethers.js stuff](https://github.com/knutli/lrn2eth/blob/main/README.md#--ethersjs-stuff-)
+3. [Hardhat](https://github.com/knutli/lrn2eth/blob/main/README.md#--hardhat-stuff-)
+
+- [wtf is Hardhat?](https://github.com/knutli/lrn2eth/blob/main/README.md#wtf-is-hardhat)
+- [Hardhat basics](https://github.com/knutli/lrn2eth/blob/main/README.md#hardhat-basics)
+- [Scripts and tasks](https://github.com/knutli/lrn2eth/blob/main/README.md#scripts-and-tasks)
+- [Mocking](https://github.com/knutli/lrn2eth/blob/main/README.md#mocking)
+- [Dynamic deployment networks](https://github.com/knutli/lrn2eth/blob/main/README.md#dynamic-deployment-networks)
+  [Syntax stuff](https://github.com/knutli/lrn2eth/blob/main/README.md#random-syntax-stuff)
+
+4. [Miscellaneous things](https://github.com/knutli/lrn2eth/blob/main/README.md#--miscellaneous-stuff-)
+
+- [Debugging errors](https://github.com/knutli/lrn2eth/blob/main/README.md#debugging-errors)
+</details>
 
 <details><summary><h1> 💡 Introduction and basics</h1></summary>
 
