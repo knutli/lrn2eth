@@ -33,7 +33,7 @@
 - [Debugging errors](https://github.com/knutli/lrn2eth/blob/main/README.md#debugging-errors)
 </details>
 
-<summary><h1> 💡 Introduction and basics</h1></summary>
+# 💡 Introduction and basics
 
 ## Basic data types
 
@@ -116,11 +116,11 @@ Arrays, structs and mappings are special data types, and solidity needs to be to
 - Immutable can be set once and again in the constructor.
 - _custom errors_ are a new thing used in place of require.
 
-<summary><h1> 🏗 ethers.js stuff </h1></summary>
+# 🏗 ethers.js stuff
 
 - Coming. Didn't take notes for this part :(
 
-<summary><h1> 🪖 Hardhat stuff </h1></summary>
+# 🪖 Hardhat stuff
 
 ## wtf is Hardhat?
 
@@ -189,7 +189,7 @@ const networkConfig = helperConfig.networkConfig;
 
 This requires us to use `modules.export = {networkConfig}` in the helper hardhat config file.
 
-<summary><h1> 🥷 Miscellaneous stuff </h1></summary>
+# 🥷 Miscellaneous stuff
 
 ## Debugging errors
 
